@@ -1,0 +1,73 @@
+/* Основные стили */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    margin-top: 56px; /* Добавим отступ для фиксированной шапки */
+}
+
+.course-card {
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для уведомлений */
+.notification {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    max-width: 300px;
+    z-index: 1050;
+}
+
+/* Стили для пагинации */
+.pagination {
+    margin-bottom: 2rem;
+}
+
+/* Стили для репетиторов */
+.tutor-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.selected-tutor {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Стили для модального окна */
+.time-slot {
+    cursor: pointer;
+}
+
+.time-slot:hover {
+    background-color: #f8f9fa;
+}
+
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Стили для форм */
+.form-check {
+    margin-bottom: 0.5rem;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .notification {
+        top: 60px;
+        right: 10px;
+        max-width: calc(100% - 20px);
+    }
+} 
